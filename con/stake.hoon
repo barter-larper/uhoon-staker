@@ -34,8 +34,8 @@
       :*  [meta.staking-token contract-staking-token 0]  ::  last argument is init to 0 right?
           [meta.reward-token contract-reward-token reward-amount]  ::  how to we get the reward contract address?
           0  ::  init period-finish to 0
-          (div reward-amount rewards-duration)  ::  how to handle this math?
-          rewards-duration
+          (div reward-amount reward-duration)  ::  how to handle this math?
+          reward-duration
           0  ::  init last-update-time to 0
           0  ::  init reward-per-token-stored to 0
           ~  ::  will ~ init a blank pmap?
